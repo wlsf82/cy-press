@@ -1,0 +1,11 @@
+{
+  "name": "@walmyr-filho/cy-press",
+  "version": "0.0.1-development",
+  "description": "A silly Cypress `.press()` command that simulates pressing a keyboard key.",
+  "main": "src",
+  "files": [
+    "src"
+  ],
+  "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev/)",
+  "license": "MIT"
+}
