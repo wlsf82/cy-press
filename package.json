@@ -1,6 +1,6 @@
 {
   "name": "@walmyr-filho/cy-press",
-  "version": "0.0.1-development",
+  "version": "0.0.2-development",
   "description": "A silly Cypress `.press()` command that simulates pressing a keyboard key.",
   "main": "src",
   "files": [
