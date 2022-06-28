@@ -1,5 +1,6 @@
 Cypress.Commands.add('press', { prevSubject: true }, (subject, key) => {
-  Cypress.log({
+  const log = Cypress.log({
+    autoEnd: false,
     name: 'press',
     displayName: 'press',
     message: `pressing ${key}`,
@@ -12,5 +13,12 @@ Cypress.Commands.add('press', { prevSubject: true }, (subject, key) => {
     key = 'selectAll'
   }
 
-  return cy.wrap(subject, { log: false }).type(`{${key}}`, { log: false })
+  return cy.wrap(subject, { log: false })
+    .then($el => {
+      log.set({ $el }).snapshot('before')
+    })
+    .type(`{${key}}`, { log: false })
+    .then($el => {
+      log.set({ $el }).snapshot('after').end()
+    })
 })
