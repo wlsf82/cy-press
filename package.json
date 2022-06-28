@@ -1,11 +1,20 @@
 {
   "name": "@walmyr-filho/cy-press",
-  "version": "0.0.3-development",
+  "version": "0.0.4-development",
   "description": "A silly Cypress `.press()` command that simulates pressing a keyboard key.",
   "main": "src",
   "files": [
     "src"
   ],
   "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev/)",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "Cypress.io",
+    "Testing",
+    "e2e"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wlsf82/cy-press"
+  }
 }
