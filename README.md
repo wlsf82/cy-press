@@ -20,6 +20,8 @@ import '@walmyr-filho/cy-press'
 
 Then, inside the test file, chain the `.press()` command to a typeable field (for example), and pass to it a [valid key](#available-keys) (e.g., `'enter'` or `'backspace'`)
 
+✅ **Correct usage**
+
 ```js
 // cypress/e2e/spec.cy.js
 
@@ -31,6 +33,18 @@ it('types and presses enter', () => {
     .press('enter')
 
   // Assertion here
+})
+```
+
+🛑 **Incorrect usage**
+
+```js
+// cypress/e2e/spec.cy.js
+
+it('tries to press without a subject element', () => {
+  cy.visit('https://example.com/searchForm')
+
+  cy.press('enter') // This won't work and will result in an error
 })
 ```
 
