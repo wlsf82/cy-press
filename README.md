@@ -59,3 +59,7 @@ it('tries to press without a subject element', () => {
 ## Available keys
 
 The available keys are described on the [official Cypress documentation](https://docs.cypress.io/api/commands/type#Arguments) + the following combination of keys: `ctrl+a`, `CTRL+A`, `cmd+a`, and `CMD+A`.
+
+___
+
+Made with ❤️ by [Walmyr Filho](https://walmyr.dev).
