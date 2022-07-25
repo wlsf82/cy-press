@@ -1,5 +1,7 @@
 # @walmyr-filho/cy-press
 
+[![npm version](https://badge.fury.io/js/@walmyr-filho%2Fcy-press.svg)](https://badge.fury.io/js/@walmyr-filho%2Fcy-press)
+
 A silly Cypress `.press()` command that simulates pressing a keyboard key.
 
 ## Installation
