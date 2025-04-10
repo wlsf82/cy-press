@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/@walmyr-filho%2Fcy-press.svg)](https://badge.fury.io/js/@walmyr-filho%2Fcy-press)
 
-A silly Cypress `.press()` command that simulates pressing a keyboard key.
+A silly Cypress `.customPress()` command that simulates pressing a keyboard key.
 
 ## Installation
 
@@ -20,7 +20,7 @@ import '@walmyr-filho/cy-press'
 // require('@walmyr-filho/cy-press')
 ```
 
-Then, inside the test file, chain the `.press()` command to a typeable field (for example), and pass to it a [valid key](#available-keys) (e.g., `'enter'` or `'backspace'`)
+Then, inside the test file, chain the `.customPress()` command to a typeable field (for example), and pass to it a [valid key](#available-keys) (e.g., `'enter'` or `'backspace'`)
 
 ✅ **Correct usage**
 
@@ -32,7 +32,7 @@ it('types and presses enter', () => {
 
   cy.get('input[type="text"]')
     .type('cypress.io')
-    .press('enter')
+    .customPress('enter')
 
   // Assertion here
 })
@@ -46,7 +46,7 @@ it('types and presses enter', () => {
 it('tries to press without a subject element', () => {
   cy.visit('https://example.com/searchForm')
 
-  cy.press('enter') // This won't work and will result in an error
+  cy.customPress('enter') // This won't work and will result in an error
 })
 ```
 
