@@ -1,10 +1,10 @@
-Cypress.Commands.add('press', { prevSubject: true }, (subject, key) => {
+Cypress.Commands.add('customPress', { prevSubject: true }, (subject, key) => {
   if (!key) throw new Error('You need to provide a key (e.g, .press("enter"))')
 
   const log = Cypress.log({
     autoEnd: false,
-    name: 'press',
-    displayName: 'press',
+    name: 'customPress',
+    displayName: 'customPress',
     message: `pressing ${key}`,
     consoleProps: () => {
       return { Key: key }
