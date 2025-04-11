@@ -8,6 +8,8 @@ A silly Cypress `.press()` command that simulates pressing a keyboard key.
 
 Run `npm i @walmyr-filho/cy-press -D` to install it as a dev dependency.
 
+> **Note:** `@walmyr-filho/cy-press` is incompatible with `cypress` v14.3.0 or greater since cypress v14.3.0 added the `cy.press` command, which conflicts with this one, although the `cy.press` command must be chained to glogal `cy` object, and this `.press` must be chained to a previous subject.
+
 ## Usage
 
 Import (or require) the `@walmyr-filho/cy-press` lib inside the `cypress/support/e2e.js` file (or `cypress/support/index.js` on Cypress version < 10.)
