@@ -13,6 +13,9 @@
     "Testing",
     "E2E-Testing"
   ],
+  "peerDependencies": {
+    "@cypress": "14.2.1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wlsf82/cy-press"
